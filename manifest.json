@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Autolike",
+  "version": "0.1",
+  "description": "Go to the URL, scroll, like all posts.",
+  "permissions": ["tabs", "scripting"],
+  "action": {
+    "default_title": "Auto Like"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["*://*.linkedin.com/*"]
+}
